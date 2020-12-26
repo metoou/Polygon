@@ -1,0 +1,19 @@
+﻿@model Parametrs
+
+<form method="get" asp-action="GetPolygonOSM">
+    <div class="col-12 mt-4 grid-margin">
+        <div class="card">
+            <div class="card-body">               
+                <div class="input-group mb-6">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text">Параметры</label>
+                    </div>
+                    <input id="validationDefault01" class="form-control" type="text" name="address" placeholder="Введите адрес:" />
+                    <select class="custom-select" asp-for="Frequencies" asp-items="ViewBag.Frequencies" name="frequency"></select>
+                    <input class="form-control" type="text" name="fileName" placeholder="Введите имя файла:" />
+                    <input class="btn btn-success" type="submit" value="Сохранить" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
